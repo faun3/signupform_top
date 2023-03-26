@@ -13,5 +13,11 @@
 
 .filter{
     background-color: black;
-    opacity: 0.5;
+    opacity: 0.7;
+}
+
+.filter svg{
+    width: 200px;
+    height: 100px;
+    color: white;
 }
