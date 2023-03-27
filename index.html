@@ -28,8 +28,28 @@
         </div>
         <div class="content">
             <p>Placeholder signup text for getting users to sign up.</p>
-            <form>
-                
+            <p>Enter your data below</p>
+            <form action="/form-handling-page" method="post">
+                <div class="inputWrapper">
+                    <ul>
+                        <li>
+                            <label for="firstname">FIRST NAME</label>
+                            <input type="text" id="firstname" name="firstname">
+                        </li>
+                        <li>
+                            <label for="lastname">LAST NAME</label>
+                            <input type="text" id="lastname" name="lastname">
+                        </li>
+                        <li>
+                            <label for="pass">PASSWORD NAME</label>
+                            <input type="password" id="pass" name="pass">
+                        </li>
+                        <li>
+                            <label for="passconfirm">CONFIRM PASSWORD</label>
+                            <input type="password" id="passconfirm" name="passconfirm">
+                        </li>
+                    </ul>
+                </div>
             </form>
             <button type="submit">Create Account</button>
             <p>Already have an account? Log in</p>
