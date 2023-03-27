@@ -6,6 +6,8 @@ body{
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-areas: "sidebar content";
+    width: auto;
+    height: auto;
 }
 
 .companyFont{
@@ -27,6 +29,7 @@ body{
     justify-content: center;
     align-items: center;
     z-index: 1;
+    height: 100%;
 }
 
 .imgWrapper > img{
