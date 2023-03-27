@@ -130,22 +130,14 @@ form{
     font-weight: 400;
 }
 
-.inputWrapper input.error{
-    border: 2px dashed red;
-}
-
-#passconfirm{
-    border: 2px dashed red;
-}
-
 .inputWrapper input:invalid{
     border: 2px dashed red;
 }
 
-.inputWrapper input:focus:invalid{
-    border: none;
-}
-
 .inputWrapper input:valid{
     border: 2px solid green;
+}
+
+.inputWrapper input.error{
+    border: 2px dashed red;
 }

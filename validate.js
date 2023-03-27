@@ -1,18 +1,27 @@
 console.log('Hi')
-const form = document.querySelector('form');
-const pass = document.querySelector('#pass');
-const passConfirm = document.querySelector('input#passconfirm');
 
+const form = document.querySelector('form');
+const pass = document.querySelector('input#pass');
+const passConfirm = document.querySelector('input#passconfirm');
 const submitButton = document.querySelector('.buttonWrapper > button');
-submitButton.addEventListener('input', (event) => {
+
+let isValid = 0;
+
+function checkPass(form){
     let p1 = form.pass.value;
     let p2 = form.passconfirm.value;
-    event.preventDefault;
-    if (p1 !== p2){
+    if (p1 === p2){
         passConfirm.classList.toggle('error');
-    } 
-    else{
-        passConfirm.classList.toggle('error');
-        form.submit();
+        isValid = 1;
+        passConfirm.setCustomValidity('');
     }
+    else passConfirm.setCustomValidity('Passwords do not match!');
+}
+
+pass.addEventListener('onChange', checkPass);
+passConfirm.addEventListener('onChange', checkPass);
+
+submitButton.addEventListener('onclick', (event) => {
+    event.preventDefault();
+    if (isValid) form.submit();
 });
