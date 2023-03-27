@@ -1,8 +1,7 @@
 .container{
     display: grid;
     grid-template-columns: 1fr, 2fr;
-    grid-auto-rows: 200px;
-
+    grid-template-areas: "sidebar content";
 }
 
 .companyFont{
