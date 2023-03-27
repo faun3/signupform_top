@@ -28,6 +28,7 @@ body{
 
 .imgWrapper img{
     height: 100vw;
+    width: auto;
 }
 
 .filter{
@@ -48,11 +49,12 @@ body{
 }
 
 .filter svg{
-    width: 100px;
-    height: 100px;
     color: white;
     align-self: center;
+    height: 100%;
+    width: auto;
 }
+
 
 .filter p{
     font-weight: 700;
