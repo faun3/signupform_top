@@ -74,4 +74,36 @@ body{
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+    margin: 5%;
+}
+
+form{
+    padding: 0px;
+}
+
+.inputWrapper{
+    padding: 0;
+}
+
+.inputWrapper > ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-content: center;
+    justify-self: left;
+    margin: 0px;
+    padding-left: 0px;
+    align-items: flex-start;
+}
+
+.inputWrapper ul li{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 10%;
+    align-self: left;
+    justify-self: left;
+    list-style-type: none;
+    list-style-position: inside;
+    margin-left: 0;
+    padding-left: 0;
 }
